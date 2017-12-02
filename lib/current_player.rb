@@ -10,6 +10,10 @@ end
 counter
 end
 
+def position_taken?(board, index)
+ board[index] == "X" || board[index] == "O"
+end
+
 def current_player(board)
   turn_count(board)
  if counter % 2 == 0
